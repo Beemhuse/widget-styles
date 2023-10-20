@@ -1,13 +1,17 @@
 /* styles.css */
 
 #chatWidgetContainer {
+    background: url("https://res.cloudinary.com/dj3zrsni6/image/upload/v1697808567/chat/Rectangle_26_ecpg44.png") no-repeat;
+    background-position: top;
+    background-size: 400px;
     position: fixed !important;
-    border: 5px solid black;
     bottom: 20px;
+    background-color: #fff;
     right: 20px;
-    width: 400px;
-    height: 500px;
-    border: 1px solid #ccc;
+    width: 300px;
+    height: 450px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid #ccc; */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     overflow: auto;
@@ -27,17 +31,35 @@
 .top_container{
     /* position: fixed; */
     /* top: 0; */
-    background-color: red;
-    height: 100px;
+    background-color: #3B8CF7;
+    height: 80px;
     display: flex;
+    gap: 0px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 10px;
 
 }
 
-.avatar{
-    height: 80px;
+.iconsContainer{
+    display: flex;
+}
+
+.title, .name{
+    color:#fff;
+    font-size: 12px;
+}
+
+.avatar {
+    height: 50px;
+    width: auto;
+}
+.call, .menu{
+    height: 30px;
+    width: auto;
+}
+.menu{
+
 }
 .chat-container {
     padding: 0 20px;
@@ -53,12 +75,13 @@
     position: fixed;
     bottom: 30px;
     right: 20px;
-    width: 380px;
+    width: 290px;
+    /* border: solid red; */
 }
 
 .message-input {
-    /* width: inherit; */
-    width: calc(100% - 60px);
+    width: inherit;
+    /* width: calc(100% - 60px); */
     padding: 10px;
     border: none;
     border-bottom: 1px solid #ccc;
@@ -96,8 +119,8 @@ button {
 
 .close_button{
 position: absolute;
-top: 10px;
-right: 10px
+top: -5px;
+right: 5px
 }
 
 
