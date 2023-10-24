@@ -221,6 +221,33 @@
 
 
 
+/* Styling for the Inner form element */
+form{
+display: flex;
+flex-direction: column;
+/* gap: 20px; */
+}
+form input{
+    /* border: none; */
+    border-bottom-width: 1px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-color: #007bff;
+}
+.emailDiv{
+    margin-top: 20px;
+
+}
+form .formSubmit{
+    margin-top: 20px;
+color:#fff;
+background-color: #3B8CF7;
+border: none;
+border-radius: 10px;
+padding:5px 10px;
+}
+
 
 @media only screen and (max-width:600px) {
 
