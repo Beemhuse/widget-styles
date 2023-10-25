@@ -36,11 +36,15 @@
 /* Top container on the chat */
 .top_container{
     background-color: #3B8CF7;
+    position: fixed;
     height: 100px;
     display: flex;
     gap: 10px;
     align-items: center;
     padding: 0 10px;
+    width: inherit;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 
 }
 /* Call and menu icons container for the top container */
@@ -120,6 +124,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 .onlineStatus p{
     font-size: 12px;
@@ -127,7 +132,7 @@
 /* The main chat container that displays the messages */
 .chat-container {
     padding: 0 20px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-bottom: 50px;
     min-height: auto;
     scroll-behavior: smooth;
@@ -135,13 +140,16 @@
 
 /* The bottom container that holds the input and send button */
 .message-container{
+    /* border: solid red; */
  display: flex;
  gap: 5px;
     align-items: center;
+    justify-content: center;
     position: fixed;
     bottom: 30px;
-    right: 20px;
-    width: 290px;
+    /* right: 20px; */
+    width: 300px;
+    margin: auto;
 }
 
 .message-input {
@@ -152,16 +160,28 @@
 }
 
 .chat-message {
+    /* border:solid red; */
     margin-bottom: 10px;
+    display: flex;
+    /* flex-direction: column; */
 }
 .chat-message.user {
     background-color: #DCF8C6;
-    align-self: flex-end;
+    /* align-self: flex-end; */
+    margin-left: auto;
+    width: fit-content;
+    padding: 8px 12px; /* Padding inside the message box */
+    border-radius: 8px;
+
 }
 
-.chat-message.server {
+.chat-message.customer {
     background-color: #EAEAEA;
     align-self: flex-start;
+    width: fit-content;
+    padding: 8px 12px; /* Padding inside the message box */
+    border-radius: 8px;
+
 }
 
 .user-message {
@@ -169,7 +189,10 @@
     color: #000000; /* Text color for user messages */
     padding: 8px 12px; /* Padding inside the message box */
     border-radius: 8px; /* Border radius for rounded corners */
-    margin-bottom: 8px; /* Margin between messages */
+    margin-bottom: 8px;
+    width: fit-content;
+    align-self: flex-start;
+
 }
 
 .customer-message {
@@ -178,6 +201,10 @@
     padding: 8px 12px; /* Padding inside the message box */
     border-radius: 8px; /* Border radius for rounded corners */
     margin-bottom: 8px; /* Margin between messages */
+    width: fit-content;
+    align-self: flex-end;
+
+
 }
 
 
@@ -187,10 +214,7 @@
 }
 
 
-
-
 /* Styling for the menu modal */
-
 .modal {
     position: fixed;
     border-radius: 20px;
@@ -225,6 +249,7 @@
 form{
 display: flex;
 flex-direction: column;
+margin-top: 40px;
 /* gap: 20px; */
 }
 form input{
