@@ -73,7 +73,20 @@ margin-top: -60px;
 } */
 
 /* Call options */
+.remote-video-el {
+  width: 100%;
+  height: 100%;
+  /* background-color: #134e92; */
+}
 
+.local-video-el {
+  position: absolute;
+  bottom: 7rem;
+  right: 0.5rem;
+  height: 10vh;
+  border-radius: 0.5rem;
+  background-color: lightgray;
+}
 .callItems {
   margin-top: 150px;
   display: flex;
