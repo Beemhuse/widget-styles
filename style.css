@@ -367,7 +367,7 @@ gap: 8px;
 }
 .chat-message.user> .userMsgContent >p {
   background-color: #F2F2F2 ;
-  width: fit-content;
+  max-width: 200px;
   padding: 8px 12px; /* Padding inside the message box */
   border-radius: 8px;
   font-size: 14px;
@@ -397,7 +397,7 @@ display: flex;
 .chat-message.customer>.customer-content {
   background-color:#E5EEFF ;
   margin-left: auto;
-  width: fit-content;
+  max-width: 200px;
   padding: 8px 12px; /* Padding inside the message box */
   border-radius: 8px;
   /* border: solid red; */
@@ -405,7 +405,6 @@ display: flex;
 .chat-message.customer>.customer-info{
   color: #737376;
   font-size: 9px;
-  /* border: solid red; */
   display: flex;
   align-items: center;
   gap: 5px;
@@ -413,6 +412,15 @@ display: flex;
 
 .send-button:hover {
   background: #45a049;
+}
+
+.typingStatus{
+  background-color: #F2F2F2 ;
+  width: fit-content;
+  margin: 10px;
+  padding: 8px 12px; /* Padding inside the message box */
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 /* Styling for the menu modal */
@@ -449,7 +457,9 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  /* gap: 20px; */
+  /* border: solid red; */
+  gap: 20px;
+  align-items: center;
 }
 form input {
   /* border: none; */
@@ -457,7 +467,9 @@ form input {
   border-top-width: 0;
   border-right-width: 0;
   border-left-width: 0;
-  border-bottom-color: #007bff;
+  padding: 5px;
+  border-radius: 20px;
+  /* border-bottom-color: #007bff; */
 }
 .emailDiv {
   margin-top: 20px;
@@ -469,6 +481,7 @@ form .formSubmit {
   border: none;
   border-radius: 10px;
   padding: 5px 10px;
+/* width: 100%; */
 }
 
 @media only screen and (max-width: 600px) {
